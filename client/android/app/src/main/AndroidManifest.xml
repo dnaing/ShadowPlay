@@ -1,6 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!-- Permission for foreground service -->
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    
+    <!-- Specific permission based on foregroundServiceType -->
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
 
     <application
@@ -31,11 +34,12 @@
         </activity>
 
 
+        <!-- Background service configuration -->
         <service
-            android:name=".MyMediaPlaybackService"
+            android:name="id.flutter.flutter_background_service.BackgroundService"
+            android:permission="android.permission.FOREGROUND_SERVICE"
             android:foregroundServiceType="mediaPlayback"
-            android:exported="false">
-        </service>
+        />
 
 
 
