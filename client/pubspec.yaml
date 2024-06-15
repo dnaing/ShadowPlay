@@ -37,12 +37,14 @@ dependencies:
   cupertino_icons: ^1.0.6
   ionicons: ^0.2.2
   audioplayers: ^6.0.0
+  flutter_background_service: ^5.0.5
+  device_info_plus: ^10.1.0
+  flutter_local_notifications: ^17.1.2
+  shared_preferences: ^2.2.3
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
-  
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is

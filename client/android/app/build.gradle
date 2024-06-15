@@ -64,4 +64,13 @@ flutter {
     source '../..'
 }
 
-dependencies {}
+// Exclude problematic Kotlin modules
+configurations {
+    implementation.exclude module: 'kotlin-stdlib-jdk8'
+    implementation.exclude module: 'kotlin-stdlib-jdk7'
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.8.22"
+    implementation "org.jetbrains.kotlin:kotlin-reflect:1.8.22"
+}
